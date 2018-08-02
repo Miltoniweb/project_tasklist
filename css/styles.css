@@ -1,0 +1,87 @@
+/* ----RESET------ */
+*,
+*::after,
+*::before{ box-sizing: border-box; }
+
+body{
+    margin: 0;
+    font-family: sans-serif; 
+}
+
+a{ text-decoration: none; }
+
+input{ border: none;}
+
+ul{ 
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+/* ---------- */
+
+.content-task{
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------- */
+.header-task{
+    background-color: #7641C2;
+}
+
+.inner-wrap{
+    margin: auto;
+    max-width: 80%;
+}
+
+.name-task{
+    margin-top: 2rem;
+    padding: .6rem;
+    width: 100%;
+    font-size: 18px;
+    color: #858080;
+}
+
+.btn-add{
+    display: block;
+    margin: 2rem auto;
+    padding: .6rem .9rem;
+    border: 1px solid #EBEBEB;
+    font-size: 1.2rem;
+    color: #EBEBEB;
+    background-color: #7641C2;
+    cursor: pointer;
+    transition: .5s all;
+}
+
+.btn-add:hover{
+    color: #7641C2;
+    background-color: #EBEBEB;
+}
+
+/* ---------- */
+.body-task{
+    background-color: rgb(253, 251, 251);
+}
+
+.task-list{}
+
+.item-list{
+    padding: 1rem 0;
+    color: #6d6d6d;
+    border-bottom: 1px dotted #858080;
+    transition: .5s all;
+}
+
+.item-list:hover{
+    padding-left: .5rem;
+    color: #fff;
+    background-color: hsl(265, 51%, 85%);
+}
+
+.validate-error{
+    font-style: italic;
+    background-color:hsl(0, 100%, 90%);
+}
